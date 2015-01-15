@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   devise_for :users
   root 'site#index'
   get 'product' => 'product#index'
+  post 'product' => 'product#select_plan', as: 'select_plan'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
