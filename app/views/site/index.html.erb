@@ -1,3 +1,10 @@
+<% if user_signed_in? %>
+    <%= current_user.email %><br><br>
+    <%= link_to 'Sign out', destroy_user_session_path %><br><br>
+<% else %>
+    <%= link_to 'Sign in', new_user_session_path %><br><br>
+<% end %>
+
 Welcome to ezTreat<br><br>
 
 The site for do-it-yourself water tower chemical treatments.<br><br>
