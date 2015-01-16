@@ -2,7 +2,9 @@ Rails.application.routes.draw do
   devise_for :users
   root 'site#index'
   get 'product' => 'product#index'
-  post 'product' => 'product#select_plan', as: 'select_plan'
+  post 'product' => 'product#plan', as: 'plan'
+  post 'review' => 'product#review', as: 'review'
+  post 'purchase' => 'purchase#index', as: 'purchase'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

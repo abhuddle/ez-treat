@@ -3,7 +3,11 @@ class ProductController < ActionController::Base
 
   end
 
-  def select_plan
+  def plan
+
+  end
+
+  def review
 
   end
 end

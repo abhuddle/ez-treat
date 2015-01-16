@@ -1,0 +1,9 @@
+You chose:  <%= params['plan_id'] %><br><br>
+
+<%= form_tag review_path do %>
+    <%= label_tag :tonnage, 'Enter your tonnage' %><br>
+    <%= text_field_tag :tonnage, '' %><br>
+    <%= submit_tag 'Reveiw' %>
+<% end %>
+
+
