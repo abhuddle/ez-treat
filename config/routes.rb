@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   post 'product' => 'product#plan', as: 'plan'
   post 'review' => 'product#review', as: 'review'
   post 'purchase' => 'purchase#index', as: 'purchase'
+  post 'receipt' => 'purchase#receipt', as: 'receipt'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

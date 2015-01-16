@@ -1,1 +1,9 @@
 credit card form
+
+<%= form_tag receipt_path do %>
+    <%= label_tag :cc_name, 'Credit Card Name' %><br>
+    <%= text_field_tag :cc_name, '' %><br>
+    <%= label_tag :cc_num, 'Credit Card Number' %><br>
+    <%= text_field_tag :cc_num, '' %><br>
+    <%= submit_tag 'Submit' %>
+<% end %>
