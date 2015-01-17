@@ -1,7 +1,4 @@
-class PurchaseController < ActionController::Base
-  def index
-  end
-
+class PurchaseController < ApplicationController
   def receipt
   end
 end
