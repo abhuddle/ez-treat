@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="Rails ez-treat: development" uuid="a9b4acee-887a-4adf-ae37-808d65a29b75">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+  <data-source name="Rails ez-treat: test" uuid="fc9e133a-3f86-44f4-8c38-ded9325076cc">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+  <data-source name="Rails ez-treat: production" uuid="2ced7fbe-851d-484f-b0a4-1e0fa9a46375">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+</component>
