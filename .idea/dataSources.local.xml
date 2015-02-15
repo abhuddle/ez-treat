@@ -2,13 +2,16 @@
 <project version="4">
   <component name="dataSourceStorageLocal">
     <data-source name="Rails ez-treat: development" uuid="a9b4acee-887a-4adf-ae37-808d65a29b75">
-      <first-sync>true</first-sync>
+      <schema-pattern>ezTreat.*</schema-pattern>
+      <default-schemas>ezTreat.*</default-schemas>
     </data-source>
     <data-source name="Rails ez-treat: test" uuid="fc9e133a-3f86-44f4-8c38-ded9325076cc">
-      <first-sync>true</first-sync>
+      <schema-pattern>ezTreat.*</schema-pattern>
+      <default-schemas>ezTreat.*</default-schemas>
     </data-source>
     <data-source name="Rails ez-treat: production" uuid="2ced7fbe-851d-484f-b0a4-1e0fa9a46375">
-      <first-sync>true</first-sync>
+      <schema-pattern>ezTreat.*</schema-pattern>
+      <default-schemas>ezTreat.*</default-schemas>
     </data-source>
   </component>
 </project>
