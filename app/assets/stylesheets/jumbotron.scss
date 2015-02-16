@@ -14,3 +14,11 @@ body {
   height: 200px;
   width: 830px;
 }
+
+@media screen and (max-width: 830px) {
+  .logo {
+    background-image: url("logo-small.png");
+    height: 140px;
+    width: 300px;
+  }
+}
