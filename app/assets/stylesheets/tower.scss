@@ -1,0 +1,97 @@
+div.content {
+  margin-left: 5px;
+}
+
+
+.navbar-app {
+  border-color: transparent;
+  background-color: #222;
+}
+
+.navbar-app .navbar-brand {
+  font-family: Allerta, Molengo, 'Lucida Sans Unicode', Lato, Lora;;
+  color: #fff;
+}
+
+.navbar-app .navbar-brand:hover,
+.navbar-app .navbar-brand:focus,
+.navbar-app .navbar-brand:active,
+.navbar-app .navbar-brand.active {
+  color: #0D56CA;
+}
+
+.navbar-app .navbar-collapse {
+  border-color: rgba(255,255,255,.02);
+}
+
+.navbar-app .navbar-toggle {
+  border-color: #3684FE;
+  background-color: #3684FE;
+}
+
+.navbar-app .navbar-toggle .icon-bar {
+  background-color: #fff;
+}
+
+.navbar-app .navbar-toggle:hover,
+.navbar-app .navbar-toggle:focus {
+  background-color: #3684FE;
+}
+
+.navbar-app .nav li a {
+  text-transform: uppercase;
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: #fff;
+}
+
+.navbar-app .nav li a:hover,
+.navbar-app .nav li a:focus {
+  outline: 0;
+  color: #3684FE;
+}
+
+.navbar-app .navbar-nav>.active>a {
+  border-radius: 0;
+  color: #fff;
+  background-color: #3684FE;
+}
+
+.navbar-app .navbar-nav>.active>a:hover,
+.navbar-app .navbar-nav>.active>a:focus {
+  color: #fff;
+  background-color: #0D56CA;
+}
+
+@media(min-width:768px) {
+  .navbar-app {
+    padding: 25px 0;
+    border: 0;
+    background-color: transparent;
+    -webkit-transition: padding .3s;
+    -moz-transition: padding .3s;
+    transition: padding .3s;
+  }
+
+  .navbar-app .navbar-brand {
+    font-size: 2em;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .3s;
+  }
+
+  .navbar-app .navbar-nav>.active>a {
+    border-radius: 3px;
+  }
+
+  .navbar-app.navbar-shrink {
+    padding: 10px 0;
+    background-color: #222;
+  }
+
+  .navbar-app.navbar-shrink .navbar-brand {
+    font-size: 1.5em;
+  }
+}
+
