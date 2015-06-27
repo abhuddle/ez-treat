@@ -11,10 +11,37 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150115013610) do
+ActiveRecord::Schema.define(version: 20150627185750) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "samples", force: true do |t|
+    t.string   "user"
+    t.string   "date"
+    t.integer  "conductivity"
+    t.integer  "ph"
+    t.integer  "magnesium"
+    t.integer  "calcium"
+    t.integer  "ca_mg_ratio"
+    t.integer  "iron"
+    t.integer  "copper"
+    t.integer  "phosphorus"
+    t.integer  "zinc"
+    t.integer  "sodium"
+    t.integer  "molybdate"
+    t.integer  "silicate"
+    t.integer  "boron"
+    t.integer  "aluminum"
+    t.integer  "sulfer"
+    t.integer  "manganese"
+    t.integer  "total_hardness"
+    t.integer  "ortho_po4"
+    t.integer  "azole"
+    t.integer  "polymer"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "users", force: true do |t|
     t.string   "email",                  default: "", null: false

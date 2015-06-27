@@ -1,0 +1,49 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user: MyString
+  date: MyString
+  conductivity: 1
+  ph: 1
+  magnesium: 1
+  calcium: 1
+  ca_mg_ratio: 1
+  iron: 1
+  copper: 1
+  phosphorus: 1
+  zinc: 1
+  sodium: 1
+  molybdate: 1
+  silicate: 1
+  boron: 1
+  aluminum: 1
+  sulfer: 1
+  manganese: 1
+  total_hardness: 1
+  ortho_po4: 1
+  azole: 1
+  polymer: 1
+
+two:
+  user: MyString
+  date: MyString
+  conductivity: 1
+  ph: 1
+  magnesium: 1
+  calcium: 1
+  ca_mg_ratio: 1
+  iron: 1
+  copper: 1
+  phosphorus: 1
+  zinc: 1
+  sodium: 1
+  molybdate: 1
+  silicate: 1
+  boron: 1
+  aluminum: 1
+  sulfer: 1
+  manganese: 1
+  total_hardness: 1
+  ortho_po4: 1
+  azole: 1
+  polymer: 1
