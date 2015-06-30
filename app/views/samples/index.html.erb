@@ -1,9 +1,10 @@
-<h1>List of Cooling Towers</h1>
+<h1>List of Samples</h1>
 
 <table border="1">
   <thead>
   <tr>
     <th>Id</th>
+    <th>Created</th>
     <th>Options</th>
   </tr>
   </thead>
@@ -11,6 +12,7 @@
   <% @samples.each do |sample| %>
       <tr>
         <td><%= link_to sample.id, sample %></td>
+        <td><%= sample.created_at %></td>
         <td>
           <%= link_to 'Edit', edit_sample_path(sample.id) %>
           <%= link_to 'Delete', sample, :method => 'delete' %>

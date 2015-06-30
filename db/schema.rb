@@ -11,10 +11,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150627185750) do
+ActiveRecord::Schema.define(version: 20150630133835) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "companies", force: true do |t|
+    t.string "name"
+    t.string "state"
+    t.string "city"
+  end
 
   create_table "samples", force: true do |t|
     t.string   "user"
@@ -41,6 +47,13 @@ ActiveRecord::Schema.define(version: 20150627185750) do
     t.integer  "polymer"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "tower_id"
+    t.string   "company_id"
+  end
+
+  create_table "towers", force: true do |t|
+    t.string "name"
+    t.string "company_id"
   end
 
   create_table "users", force: true do |t|
@@ -56,6 +69,8 @@ ActiveRecord::Schema.define(version: 20150627185750) do
     t.string   "last_sign_in_ip"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "company_id"
+    t.boolean  "is_admin"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree

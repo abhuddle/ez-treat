@@ -1,5 +1,14 @@
-<h1>New Sample Data</h1>
+<h1>New Data Sample</h1>
 <%= form_for @sample do |sample| %>
+  <div class="form-group">
+    <%= sample.label :company, "Company Name" %>
+    <%= sample.text_field :company_id,{class: 'form-control',placeholder: 'Company'}  %>
+  </div>
+  <div class="form-group">
+    <%= sample.label :tower, "Cooling Tower Name" %>
+    <%= sample.text_field :tower_id,{class: 'form-control',placeholder: 'Tower'}  %>
+  </div>
+  <hr>
   <div class="form-group">
     <%= sample.label :conductivity, "Conductivity" %>
     <%= sample.text_field :conductivity,{class: 'form-control',placeholder: 'Conductivity'}  %>
