@@ -1,4 +1,6 @@
 class SamplesController < ApplicationController
+  before_filter :authenticate_user!
+
   def index
     @samples = Sample.all
   end

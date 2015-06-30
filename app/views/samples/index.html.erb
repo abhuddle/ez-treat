@@ -1,1 +1,22 @@
-index
+<h1>List of Cooling Towers</h1>
+
+<table border="1">
+  <thead>
+  <tr>
+    <th>Id</th>
+    <th>Options</th>
+  </tr>
+  </thead>
+
+  <% @samples.each do |sample| %>
+      <tr>
+        <td><%= link_to sample.id, sample %></td>
+        <td>
+          <%= link_to 'Edit', edit_sample_path(sample.id) %>
+          <%= link_to 'Delete', sample, :method => 'delete' %>
+        </td>
+      </tr>
+  <% end -%>
+</table>
+
+<p><%= link_to 'New Sample', new_sample_path %></p>

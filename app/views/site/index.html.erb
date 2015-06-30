@@ -60,7 +60,11 @@
           <a class="page-scroll" href="#contact">Contact</a>
         </li>
         <li>
-          <a href="/users/sign_in">Login</a>
+          <% if user_signed_in? %>
+              <a href="/samples"><%= current_user.email %></a>
+          <% else %>
+              <a href="/users/sign_in">Login</a>
+          <% end %>
         </li>
       </ul>
     </div>

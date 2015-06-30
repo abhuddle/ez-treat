@@ -17,10 +17,13 @@
     <div class="navbar-collapse">
       <ul class="nav navbar-nav navbar-right">
         <li>
-          <a href="#contact">Hi Andy</a>
-        </li>
+          <% if user_signed_in? %>
+            <a href="/"><%= current_user.email %></a>
+          <% end %>
         <li>
-          <a href="/users/sign_in">Logout</a>
+          <% if user_signed_in? %>
+            <a href="/users/sign_out">Logout</a>
+          <% end %>
         </li>
       </ul>
     </div>
