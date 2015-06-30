@@ -61,7 +61,7 @@
         </li>
         <li>
           <% if user_signed_in? %>
-              <a href="/samples"><%= current_user.email %></a>
+              <%= link_to "Dashboard", dashboard_path %>
           <% else %>
               <a href="/users/sign_in">Login</a>
           <% end %>
