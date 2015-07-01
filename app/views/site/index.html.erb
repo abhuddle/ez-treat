@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Your Cooling Tower</title>
-  <%= favicon_link_tag 'favicon.ico' %>
+  <%= favicon_link_tag 'favicon-flask.ico' %>
   <!-- Custom Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
   <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
@@ -79,7 +79,7 @@
     <div class="intro-text">
       <div class="intro-lead-in">Insight into your cooling tower's health</div>
       <div class="intro-heading">Your Cooling Tower</div>
-      <a href="#services" class="page-scroll btn btn-xl">Tell Me More</a>
+      <a href="#services" class="page-scroll btn btn-xl">Learn More</a>
     </div>
   </div>
 </header>
@@ -97,20 +97,25 @@
       <div class="col-md-4">
                     <span class="fa-stack fa-4x">
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
+                        <i class="fa fa-bar-chart-o fa-stack-1x fa-inverse"></i>
                     </span>
         <h4 class="service-heading">Data & Analysis</h4>
-        <p class="text-muted">We provide you with detailed data and analysis showing you your Cooling Tower's health in
-          the most critical areas.</p>
+        <p class="text-muted">By sending us periodic water samples from Your Cooling Tower, we will provide you with
+          detailed data and analysis reports giving you insight into your Cooling Tower's health in
+          the most critical areas.  With this insight you can make more informed decisions on how to budget and spend
+          on Your Cooling Tower maintenance.
+        </p>
       </div>
       <div class="col-md-4">
                     <span class="fa-stack fa-4x">
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
+                        <i class="fa fa-dollar fa-stack-1x fa-inverse"></i>
                     </span>
         <h4 class="service-heading">Solutions</h4>
-        <p class="text-muted">Depending on your cooling towers health we can recommend and provide chemical solutions
-          needed to maintain your cooling tower.</p>
+        <p class="text-muted">Depending on Your Cooling Tower's health we will provide recommendations on the treatments you
+          need in order to keep Your Cooling Tower running in the most optimal fashion.  We can also provide the chemicals
+          you need to treat Your Cooling Tower so that you can apply them and save greatly on Your Cooling Tower maintenance
+          expenses.</p>
       </div>
       <div class="col-md-4">
                     <span class="fa-stack fa-4x">
@@ -118,8 +123,10 @@
                         <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
                     </span>
         <h4 class="service-heading">Online & Secure</h4>
-        <p class="text-muted">Your data and analysis reports for your cooling tower are always available at
-          YourCoolingTower.com using your secure login.</p>
+        <p class="text-muted">Data and analysis reports for Your Cooling Tower are always available at
+          YourCoolingTower.com using your secure login.  Your Cooling Tower data is viewable only by you and is
+          safely backed-up and maintained in our databases. Your Cooling Tower data is always viewable using our
+          state of the art query and reporting technologies</p>
       </div>
     </div>
   </div>
@@ -139,7 +146,7 @@
         <ul class="timeline">
           <li>
             <div class="timeline-image">
-              <img class="img-circle img-responsive" src="" alt="">
+              <%= image_tag("1.jpg", :class => "img-circle img-responsive", :alt => "step 1" ) %>
             </div>
             <div class="timeline-panel">
               <div class="timeline-heading">
@@ -147,13 +154,14 @@
                 <h4 class="subheading">We send you an analysis packet</h4>
               </div>
               <div class="timeline-body">
-                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                <p class="text-muted">After signing up with us, we will periodically send you sample packets which include
+                  sample bottles, labels and pre-marked shipping materials.</p>
               </div>
             </div>
           </li>
           <li class="timeline-inverted">
             <div class="timeline-image">
-              <img class="img-circle img-responsive" src="" alt="">
+              <%= image_tag("2.jpg", :class => "img-circle img-responsive", :alt => "step 2" ) %>
             </div>
             <div class="timeline-panel">
               <div class="timeline-heading">
@@ -161,13 +169,14 @@
                 <h4 class="subheading">You send us water samples</h4>
               </div>
               <div class="timeline-body">
-                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                <p class="text-muted">Using the sample packet that we provide, you will periodically take samples of
+                  the water from Your Cooling Tower and send those samples to our lab for testing.</p>
               </div>
             </div>
           </li>
           <li>
             <div class="timeline-image">
-              <img class="img-circle img-responsive" src="" alt="">
+              <%= image_tag("3.jpg", :class => "img-circle img-responsive", :alt => "step 3" ) %>
             </div>
             <div class="timeline-panel">
               <div class="timeline-heading">
@@ -175,21 +184,25 @@
                 <h4 class="subheading">We provide detailed data, analysis and recommendations</h4>
               </div>
               <div class="timeline-body">
-                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                <p class="text-muted">At our labs we will analyze the sample, record the results into our
+                  database and generate sophisticated reports which you can access online using your
+                  secure login.</p>
               </div>
             </div>
           </li>
           <li class="timeline-inverted">
             <div class="timeline-image">
-              <img class="img-circle img-responsive" src="" alt="">
+              <%= image_tag("4.jpg", :class => "img-circle img-responsive", :alt => "step 4" ) %>
             </div>
             <div class="timeline-panel">
               <div class="timeline-heading">
                 <h4>Step #4</h4>
-                <h4 class="subheading">We send you any needed chemical applications</h4>
+                <h4 class="subheading">Use the data as you see fit</h4>
               </div>
               <div class="timeline-body">
-                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                <p class="text-muted">You can use the data to observe trends in Your Cooling Tower over time which
+                can help you make informed maintenance decisions.  Additionally, we can make recommendations and
+                provide you with the chemicals you need to treat Your Cooling Tower saving you money.</p>
               </div>
             </div>
           </li>
@@ -206,41 +219,13 @@
   </div>
 </section>
 
-<!-- Clients Aside -->
-<aside class="clients">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-3 col-sm-6">
-        <a href="#">
-          <img src="" class="img-responsive img-centered" alt="">
-        </a>
-      </div>
-      <div class="col-md-3 col-sm-6">
-        <a href="#">
-          <img src="" class="img-responsive img-centered" alt="">
-        </a>
-      </div>
-      <div class="col-md-3 col-sm-6">
-        <a href="#">
-          <img src="" class="img-responsive img-centered" alt="">
-        </a>
-      </div>
-      <div class="col-md-3 col-sm-6">
-        <a href="#">
-          <img src="" class="img-responsive img-centered" alt="">
-        </a>
-      </div>
-    </div>
-  </div>
-</aside>
-
 <!-- Contact Section -->
 <section id="contact">
   <div class="container">
     <div class="row">
       <div class="col-lg-12 text-center">
         <h2 class="section-heading">Contact Us</h2>
-        <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+        <h3 class="section-subheading text-muted">Questions?  Drop us a message.</h3>
       </div>
     </div>
     <div class="row">
