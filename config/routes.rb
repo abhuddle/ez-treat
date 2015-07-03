@@ -3,4 +3,5 @@ Rails.application.routes.draw do
   root 'site#index'
   get 'dashboard' => 'dashboard#index'
   resources :samples
+  get 'towers' => 'samples#towers'
 end

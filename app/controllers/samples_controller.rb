@@ -41,6 +41,11 @@ class SamplesController < ApplicationController
     @sample = Sample.find params[:id]
   end
 
+  def towers
+    towers = Tower.where(company_id:params['company'])
+    render json: towers
+  end
+
   private
 
   def sample_params
