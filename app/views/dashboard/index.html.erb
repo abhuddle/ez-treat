@@ -1,10 +1,40 @@
-<h1>Admin Dashboard</h1>
+<h1>Dashboard</h1>
+<% if current_user.is_admin %>
 <div>
-  <%= link_to "Samples Manager", samples_path %>
+  <h2>Admin</h2>
+  <%= link_to "Samples Editor", samples_path %>
   <br>
-  Tower Manager
+  Tower Editor
   <br>
-  Company Manager
+  Company Editor
   <br>
-  User Manager
+  User Editor
+</div>
+<% elsif !current_user.is_admin %>
+<div>
+  <h2>Tower Manager</h2>
+  <table border="1">
+    <thead>
+    <tr>
+      <th>Id</th>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Health %</th>
+      <th>Options</th>
+    </tr>
+    </thead>
+    <% @towers.each do |tower| %>
+      <tr>
+        <td><%= tower.id %></td>
+        <td><%= tower.name %></td>
+        <td><%= tower.tower_type %></td>
+        <td>83%</td>
+        <td><%= link_to 'Reports', report_path(tower.id) %></td>
+      </tr>
+  <% end -%>
+  </table>
+</div>
+<% end %>
+<div>
+
 </div>

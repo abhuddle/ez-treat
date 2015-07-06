@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   get 'dashboard' => 'dashboard#index'
   resources :samples
   get 'towers' => 'samples#towers'
+  resources :reports
 end
