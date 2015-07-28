@@ -49,7 +49,7 @@ class SamplesController < ApplicationController
   private
 
   def sample_params
-    params.require(:sample).permit(:user, :date, :conductivity, :ph, :magnesium, :calcium, :ca_mg_ratio, :iron, :copper, :phosphorus,
+    params.require(:sample).permit(:user, :sample_date, :city_sodium, :date, :conductivity, :ph, :magnesium, :calcium, :ca_mg_ratio, :iron, :copper, :phosphorus,
     :zinc, :sodium, :molybdate, :silicate, :boron, :aluminum, :sulfer, :manganese, :total_hardness, :ortho_po4, :azole, :polymer)
   end
 end

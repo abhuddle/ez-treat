@@ -9,6 +9,18 @@
     </div>
     <hr>
     <div class="form-group">
+      <%= sample.label :sample_date, "Sample Date" %>
+      <%= sample.text_field :sample_date,{class: 'form-control',placeholder: 'mm/dd/yyyy'}  %>
+    </div>
+    <hr>
+    <h4>City Water Data</h4>
+    <div class="form-group">
+      <%= sample.label :city_sodium, "Sodium (as ppm Na)" %>
+      <%= sample.text_field :city_sodium, {class: 'form-control',placeholder: 'City Water Sodium'}  %>
+    </div>
+    <hr>
+    <h4>Cooling Tower Data</h4>
+    <div class="form-group">
       <%= sample.label :conductivity, "Conductivity" %>
       <%= sample.text_field :conductivity,{class: 'form-control',placeholder: 'Conductivity'}  %>
     </div>

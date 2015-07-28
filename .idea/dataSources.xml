@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="DataSourceManagerImpl" format="xml" hash="563204313">
+  <component name="DataSourceManagerImpl" format="xml" hash="1584998886">
     <data-source source="LOCAL" name="Rails ez-treat: development" uuid="a9b4acee-887a-4adf-ae37-808d65a29b75">
       <driver-ref>postgresql</driver-ref>
       <synchronize>true</synchronize>
