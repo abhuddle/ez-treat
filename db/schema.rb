@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150726223530) do
+ActiveRecord::Schema.define(version: 20150729154523) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -25,32 +25,33 @@ ActiveRecord::Schema.define(version: 20150726223530) do
   create_table "samples", force: true do |t|
     t.string   "user"
     t.string   "date"
-    t.integer  "conductivity"
-    t.integer  "ph"
-    t.integer  "magnesium"
-    t.integer  "calcium"
-    t.integer  "ca_mg_ratio"
-    t.integer  "iron"
-    t.integer  "copper"
-    t.integer  "phosphorus"
-    t.integer  "zinc"
-    t.integer  "sodium"
-    t.integer  "molybdate"
-    t.integer  "silicate"
-    t.integer  "boron"
-    t.integer  "aluminum"
-    t.integer  "sulfer"
-    t.integer  "manganese"
-    t.integer  "total_hardness"
-    t.integer  "ortho_po4"
-    t.integer  "azole"
-    t.integer  "polymer"
+    t.decimal  "conductivity",   precision: 10, scale: 2
+    t.decimal  "ph",             precision: 10, scale: 2
+    t.decimal  "magnesium",      precision: 10, scale: 2
+    t.decimal  "calcium",        precision: 10, scale: 2
+    t.decimal  "ca_mg_ratio",    precision: 10, scale: 2
+    t.decimal  "iron",           precision: 10, scale: 2
+    t.decimal  "copper",         precision: 10, scale: 2
+    t.decimal  "phosphorus",     precision: 10, scale: 2
+    t.decimal  "zinc",           precision: 10, scale: 2
+    t.decimal  "sodium",         precision: 10, scale: 2
+    t.decimal  "molybdate",      precision: 10, scale: 2
+    t.decimal  "silicate",       precision: 10, scale: 2
+    t.decimal  "boron",          precision: 10, scale: 2
+    t.decimal  "aluminum",       precision: 10, scale: 2
+    t.decimal  "sulfer",         precision: 10, scale: 2
+    t.decimal  "manganese",      precision: 10, scale: 2
+    t.decimal  "total_hardness", precision: 10, scale: 2
+    t.decimal  "ortho_po4",      precision: 10, scale: 2
+    t.decimal  "azole",          precision: 10, scale: 2
+    t.decimal  "polymer",        precision: 10, scale: 2
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "tower_id"
     t.string   "company_id"
-    t.string   "sample_date"
-    t.string   "city_sodium"
+    t.datetime "sample_date"
+    t.decimal  "city_sodium",    precision: 10, scale: 2
+    t.decimal  "free_chlorine",  precision: 10, scale: 2
   end
 
   create_table "towers", force: true do |t|

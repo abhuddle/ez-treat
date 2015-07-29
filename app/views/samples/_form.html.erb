@@ -16,89 +16,93 @@
     <h4>City Water Data</h4>
     <div class="form-group">
       <%= sample.label :city_sodium, "Sodium (as ppm Na)" %>
-      <%= sample.text_field :city_sodium, {class: 'form-control',placeholder: 'City Water Sodium'}  %>
+      <%= sample.number_field :city_sodium, {class: 'form-control', step: 'any', placeholder: 'City Sodium'}  %>
     </div>
     <hr>
     <h4>Cooling Tower Data</h4>
     <div class="form-group">
       <%= sample.label :conductivity, "Conductivity" %>
-      <%= sample.text_field :conductivity,{class: 'form-control',placeholder: 'Conductivity'}  %>
+      <%= sample.number_field :conductivity,{class: 'form-control',  step: 'any', placeholder: 'Conductivity'}  %>
     </div>
     <div class="form-group">
       <%= sample.label :ph, "pH" %>
-      <%= sample.text_field :ph, {class: 'form-control',placeholder: 'ph'}  %>
+      <%= sample.number_field :ph, {class: 'form-control', step: 'any', placeholder: 'ph'}  %>
     </div>
     <div class="form-group">
       <%= sample.label :magnesium, "Magnesium (as ppm CaCO3)" %>
-      <%= sample.text_field :magnesium, {class: 'form-control',placeholder: 'Magnesium'}  %>
+      <%= sample.number_field :magnesium, {class: 'form-control', step: 'any' ,placeholder: 'Magnesium'}  %>
     </div>
     <div class="form-group">
       <%= sample.label :calcium, "Calcium (as ppm CaCO3)" %>
-      <%= sample.text_field :ph, {class: 'form-control',placeholder: 'Calcium'}  %>
+      <%= sample.number_field :ph, {class: 'form-control', step: 'any',placeholder: 'Calcium'}  %>
     </div>
     <div class="form-group">
       <%= sample.label :ca_mg_ratio, "CA/MG_Ratio" %>
-      <%= sample.text_field :ca_mg_ratio, {class: 'form-control',placeholder: 'CA/MG_Ratio'}  %>
+      <%= sample.number_field :ca_mg_ratio, {class: 'form-control', step: 'any', placeholder: 'CA/MG_Ratio'}  %>
     </div>
     <div class="form-group">
       <%= sample.label :iron, "Iron (as ppm Fe)" %>
-      <%= sample.text_field :iron, {class: 'form-control',placeholder: 'Iron'}  %>
+      <%= sample.number_field :iron, {class: 'form-control', step: 'any' ,placeholder: 'Iron'}  %>
     </div>
     <div class="form-group">
       <%= sample.label :copper, "Copper (as ppm Cu)" %>
-      <%= sample.text_field :copper, {class: 'form-control',placeholder: 'Copper'}  %>
+      <%= sample.number_field :copper, {class: 'form-control', step: 'any' ,placeholder: 'Copper'}  %>
     </div>
     <div class="form-group">
       <%= sample.label :phosphorus, "Phosphorus (as ppm PO4)" %>
-      <%= sample.text_field :phosphorus, {class: 'form-control',placeholder: 'Phosphorus'}  %>
+      <%= sample.number_field :phosphorus, {class: 'form-control', step: 'any' ,placeholder: 'Phosphorus'}  %>
     </div>
     <div class="form-group">
       <%= sample.label :zinc, "Zinc (as ppm PO4)" %>
-      <%= sample.text_field :zinc, {class: 'form-control',placeholder: 'Zinc'}  %>
+      <%= sample.number_field :zinc, {class: 'form-control', step: 'any', placeholder: 'Zinc'}  %>
     </div>
     <div class="form-group">
       <%= sample.label :sodium, "Sodium (as ppm Na)" %>
-      <%= sample.text_field :sodium, {class: 'form-control',placeholder: 'Sodium'}  %>
+      <%= sample.number_field :sodium, {class: 'form-control', step: 'any', placeholder: 'Sodium'}  %>
     </div>
     <div class="form-group">
       <%= sample.label :molybdate, "Molybdate (as ppm Mo)" %>
-      <%= sample.text_field :molybdate, {class: 'form-control',placeholder: 'Molybdate'}  %>
+      <%= sample.number_field :molybdate, {class: 'form-control', step: 'any', placeholder: 'Molybdate'}  %>
     </div>
     <div class="form-group">
       <%= sample.label :silicate, "Silicate (as ppm SiO2)" %>
-      <%= sample.text_field :silicate, {class: 'form-control',placeholder: 'Silicate'}  %>
+      <%= sample.number_field :silicate, {class: 'form-control', step: 'any', placeholder: 'Silicate'}  %>
     </div>
     <div class="form-group">
       <%= sample.label :boron, "Boron (as ppm B)" %>
-      <%= sample.text_field :boron, {class: 'form-control',placeholder: 'Boron'}  %>
+      <%= sample.number_field :boron, {class: 'form-control', step: 'any', placeholder: 'Boron'}  %>
     </div>
     <div class="form-group">
       <%= sample.label :aluminum, "Aluminum (as ppm Al)" %>
-      <%= sample.text_field :aluminum, {class: 'form-control',placeholder: 'Aluminum'}  %>
+      <%= sample.number_field :aluminum, {class: 'form-control', step: 'any', placeholder: 'Aluminum'}  %>
     </div>
     <div class="form-group">
       <%= sample.label :sulfer, "Sulfer (as ppm SO4)" %>
-      <%= sample.text_field :sulfer, {class: 'form-control',placeholder: 'Sulfer'}  %>
+      <%= sample.number_field :sulfer, {class: 'form-control', step: 'any', placeholder: 'Sulfer'}  %>
     </div>
     <div class="form-group">
       <%= sample.label :manganese, "Manganese (as ppm Mn)" %>
-      <%= sample.text_field :manganese, {class: 'form-control',placeholder: 'Manganese'}  %>
+      <%= sample.number_field :manganese, {class: 'form-control', step: 'any', placeholder: 'Manganese'}  %>
     </div>
     <div class="form-group">
       <%= sample.label :total_hardness, "Total Hardness (as ppm CaCO3)" %>
-      <%= sample.text_field :total_hardness, {class: 'form-control',placeholder: 'Total Hardness'}  %>
+      <%= sample.number_field :total_hardness, {class: 'form-control', step: 'any', placeholder: 'Total Hardness'}  %>
     </div>
     <div class="form-group">
       <%= sample.label :ortho_po4, "Ortho PO4 (as ppm PO4)" %>
-      <%= sample.text_field :ortho_po4, {class: 'form-control',placeholder: 'Ortho PO4'}  %>
+      <%= sample.number_field :ortho_po4, {class: 'form-control', step: 'any', placeholder: 'Ortho PO4'}  %>
     </div>
     <div class="form-group">
       <%= sample.label :azole, "Azole (as ppm TT)" %>
-      <%= sample.text_field :azole, {class: 'form-control',placeholder: 'Azole'}  %>
+      <%= sample.number_field :azole, {class: 'form-control', step: 'any', placeholder: 'Azole'}  %>
     </div>
     <div class="form-group">
       <%= sample.label :polymer, "Polymer (as FAU)" %>
-      <%= sample.text_field :polymer, {class: 'form-control',placeholder: 'Polymer'}  %>
+      <%= sample.number_field :polymer, {class: 'form-control', step: 'any', placeholder: 'Polymer'}  %>
+    </div>
+    <div class="form-group">
+      <%= sample.label :free_chlorine, "Free Chlorine" %>
+      <%= sample.number_field :free_chlorine, {class: 'form-control', step: 'any', placeholder: 'Free Chlorine'}  %>
     </div>
     <%= sample.submit class:'btn btn-default' %>
 <% end -%>
@@ -113,7 +117,7 @@
                 towerSelect.html('');
                 towerSelect.append('<option value>Select</option>');
                 $.each(data, function(key, val){
-                    towerSelect.append('<option id="' + val.id + '">' + val.name + '</option>');
+                    towerSelect.append('<option value="' + val.id + '">' + val.name + '</option>');
                 })
             }
         });

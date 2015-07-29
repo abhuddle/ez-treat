@@ -4,7 +4,7 @@
   <thead>
   <tr>
     <th>Id</th>
-    <th>Created</th>
+    <th>Sample Date</th>
     <th>Company</th>
     <th>Tower</th>
     <th>Options</th>
@@ -14,7 +14,7 @@
   <% @samples.each do |sample| %>
       <tr>
         <td><%= link_to sample.id, sample %></td>
-        <td><%= sample.created_at.strftime('%m/%d/%Y %I:%M%p') %></td>
+        <td><%= sample.sample_date.strftime('%m/%d/%Y') %></td>
         <td><%= sample.company.name %></td>
         <td><%= sample.tower.name %></td>
         <td>

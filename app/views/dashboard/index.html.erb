@@ -19,7 +19,7 @@
       <th>Id</th>
       <th>Name</th>
       <th>Type</th>
-      <th>Health %</th>
+      <th>Health</th>
       <th>Options</th>
     </tr>
     </thead>
@@ -28,7 +28,7 @@
         <td><%= tower.id %></td>
         <td><%= tower.name %></td>
         <td><%= tower.tower_type %></td>
-        <td>83%</td>
+        <td></td>
         <td><%= link_to 'Reports', report_path(tower.id) %></td>
       </tr>
   <% end -%>

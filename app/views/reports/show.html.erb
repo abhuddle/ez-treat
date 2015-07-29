@@ -1,9 +1,21 @@
-<table>
+<h2>Tower Analysis</h2>
+<table border="1">
+  <thead>
+  <tr>
+    <th>Sample Date</th>
+    <th>Conductivity</th>
+    <th>COC</th>
+    <th>Free Chlorine</th>
+    <th>Polymer</th>
+  </tr>
+  </thead>
 <% @data.each do |data| %>
     <tr>
-      <td><%= data.id %></td>
-      <td><%= data.ph %></td>
-      <td><%= data.magnesium %></td>
+      <td><%= data.sample_date.strftime('%m/%d/%Y') %></td>
+      <td><%= data.conductivity %></td>
+      <td><%= data.cycles_of_concentration %></td>
+      <td><%= data.free_chlorine %></td>
+      <td><%= data.polymer %></td>
     </tr>
 <% end -%>
 </table>
