@@ -19,3 +19,25 @@
     </tr>
 <% end -%>
 </table>
+<div id="chart"></div>
+<script>
+
+d3.json('/data/1', function(data) {
+    data = MG.convert.date(data, 'formatted_sample_date');
+    MG.data_graphic({
+        title: "Cycles of Concentration",
+        description: "This is a simple line chart. You can remove the area portion by adding area: false to the arguments list.",
+        data: data,
+        area: false,
+        interpolate: 'basic',
+        width: 800,
+        height: 200,
+        right: 40,
+        max_y: 17,
+        min_y: 7,
+        target:'div#chart',
+        x_accessor: 'formatted_sample_date',
+        y_accessor: 'cycles_of_concentration'
+    });
+});
+</script>

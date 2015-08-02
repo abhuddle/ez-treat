@@ -5,4 +5,5 @@ Rails.application.routes.draw do
   resources :samples
   get 'towers' => 'samples#towers'
   resources :reports
+  get 'data/:id' => 'reports#data'
 end
