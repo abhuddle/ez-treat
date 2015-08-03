@@ -1,32 +1,52 @@
 <h2>Tower Analysis</h2>
-<table border="1">
-  <thead>
-  <tr>
-    <th>Sample Date</th>
-    <th>Conductivity</th>
-    <th>COC</th>
-    <th>Free Chlorine</th>
-    <th>Polymer</th>
-  </tr>
-  </thead>
-<% @data.each do |data| %>
-    <tr>
-      <td><%= data.sample_date.strftime('%m/%d/%Y') %></td>
-      <td><%= data.conductivity %></td>
-      <td><%= data.cycles_of_concentration %></td>
-      <td><%= data.free_chlorine %></td>
-      <td><%= data.polymer %></td>
-    </tr>
-<% end -%>
-</table>
-<div id="chart"></div>
+<!--<table border="1">-->
+  <!--<thead>-->
+  <!--<tr>-->
+    <!--<th>Sample Date</th>-->
+    <!--<th>Conductivity</th>-->
+    <!--<th>COC</th>-->
+    <!--<th>Free Chlorine</th>-->
+    <!--<th>Polymer</th>-->
+  <!--</tr>-->
+  <!--</thead>-->
+<!--<% @data.each do |data| %>-->
+    <!--<tr>-->
+      <!--<td><%= data.sample_date.strftime('%m/%d/%Y') %></td>-->
+      <!--<td><%= data.conductivity %></td>-->
+      <!--<td><%= data.cycles_of_concentration %></td>-->
+      <!--<td><%= data.free_chlorine %></td>-->
+      <!--<td><%= data.polymer %></td>-->
+    <!--</tr>-->
+<!--<% end -%>-->
+<!--</table>-->
+<div id="conductivity"></div>
+<div id="coc"></div>
+<div id="free-chlorine"></div>
+<div id="polymer"></div>
 <script>
-
-d3.json('/data/1', function(data) {
+    d3.json('/data/<%= params['id'] %>', function(data) {
+    data = MG.convert.date(data, 'formatted_sample_date');
+    MG.data_graphic({
+        title: "Conductivity",
+        description: "The concentration of dissolved solids which have been ionized in a polar solution such as water.",
+        data: data,
+        area: false,
+        interpolate: 'basic',
+        width: 800,
+        height: 200,
+        right: 40,
+        max_y: 900,
+        min_y: 800,
+        target:'div#conductivity',
+        x_accessor: 'formatted_sample_date',
+        y_accessor: 'conductivity'
+    });
+});
+d3.json('/data/<%= params['id'] %>', function(data) {
     data = MG.convert.date(data, 'formatted_sample_date');
     MG.data_graphic({
         title: "Cycles of Concentration",
-        description: "This is a simple line chart. You can remove the area portion by adding area: false to the arguments list.",
+        description: "The number of times the dissolved minerals in the system cooling water are concentrated versus the level in the raw makeup water.",
         data: data,
         area: false,
         interpolate: 'basic',
@@ -35,9 +55,45 @@ d3.json('/data/1', function(data) {
         right: 40,
         max_y: 17,
         min_y: 7,
-        target:'div#chart',
+        target:'div#coc',
         x_accessor: 'formatted_sample_date',
         y_accessor: 'cycles_of_concentration'
+    });
+});
+    d3.json('/data/<%= params['id'] %>', function(data) {
+    data = MG.convert.date(data, 'formatted_sample_date');
+    MG.data_graphic({
+        title: "Free Chlorine",
+        description: "The concentration of residual chlorine in water which is present as dissolved gas (Cl2), hypochlorous acid (HOCl), and/or hypochlorite ion (OCl-).",
+        data: data,
+        area: false,
+        interpolate: 'basic',
+        width: 800,
+        height: 200,
+        right: 40,
+        max_y: 3,
+        min_y: 0,
+        target:'div#free-chlorine',
+        x_accessor: 'formatted_sample_date',
+        y_accessor: 'free_chlorine'
+    });
+});
+    d3.json('/data/<%= params['id'] %>', function(data) {
+    data = MG.convert.date(data, 'formatted_sample_date');
+    MG.data_graphic({
+        title: "Polymer",
+        description: "The amount of scale inhibitors present.",
+        data: data,
+        area: false,
+        interpolate: 'basic',
+        width: 800,
+        height: 200,
+        right: 40,
+        max_y: 350,
+        min_y: 250,
+        target:'div#polymer',
+        x_accessor: 'formatted_sample_date',
+        y_accessor: 'polymer'
     });
 });
 </script>
