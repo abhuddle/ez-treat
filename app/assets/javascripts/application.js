@@ -3,3 +3,4 @@
 //= require cbpAnimatedHeader
 //= require tower
 //= require d3
+//= require bootstrap-datepicker
